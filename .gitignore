@@ -16,10 +16,7 @@ venv/
 .DS_Store
 
 # Project data
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+data/*
 
 # Notebooks
 .ipynb_checkpoints/
