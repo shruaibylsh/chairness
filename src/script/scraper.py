@@ -172,7 +172,7 @@ def scrape_pinterest(num_images=500):
 
 try:
     # Run the scraper
-    scrape_pinterest(50)  # Change this number to scrape more images
+    scrape_pinterest(200)  # Change this number to scrape more images
     print("\nScraping complete!")
     print(f"Image data saved to: {csv_file}")
     print(f"Images downloaded to: {image_folder}")
