@@ -16,7 +16,7 @@ venv/
 .DS_Store
 
 # Project data
-data/*
+src/data/
 
 # Notebooks
 .ipynb_checkpoints/
