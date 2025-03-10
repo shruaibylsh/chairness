@@ -11,8 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Set the output directory to ../raw/real
-output_dir = os.path.join("..", "raw", "real")
+# Set the output directory
+output_dir = os.path.join("..", "data")
 
 # Create output directories
 image_folder = os.path.join(output_dir, "chair_images")
@@ -39,7 +39,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as f:
 def scrape_pinterest(num_images=500):
     # Go directly to the search page for designer chairs
     print("Navigating to Pinterest search page...")
-    driver.get("https://www.pinterest.com/search/pins/?q=designer%20chair")
+    driver.get("https://www.pinterest.com/search/pins/?q=chair%20design")
     time.sleep(5)  # Wait for page to load
     
     # Scroll to load more pins
