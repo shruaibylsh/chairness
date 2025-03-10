@@ -39,7 +39,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as f:
 def scrape_pinterest(num_images=500):
     # Go directly to the search page for designer chairs
     print("Navigating to Pinterest search page...")
-    driver.get("https://www.pinterest.com/search/pins/?q=chair%20design")
+    driver.get("https://www.pinterest.com/search/pins/?q=vitra%20chair%20design")
     time.sleep(5)  # Wait for page to load
     
     # Scroll to load more pins
@@ -172,7 +172,7 @@ def scrape_pinterest(num_images=500):
 
 try:
     # Run the scraper
-    scrape_pinterest(500)  # Change this number to scrape more images
+    scrape_pinterest(200)  # Change this number to scrape more images
     print("\nScraping complete!")
     print(f"Image data saved to: {csv_file}")
     print(f"Images downloaded to: {image_folder}")
